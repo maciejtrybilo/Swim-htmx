@@ -15,6 +15,11 @@ as well as disabling the button for the duration of the call.
 The `GET /emoji` endpoint simply responds with a random emoji text (which is valid HTML) and the contents of the `<div id:"emoji">` tag is replaced with it.
 
 ```Swift
+import Vapor
+import SwimHTMX
+import SwimVapor
+import HTML
+
 struct EmojiController: RouteCollection {
 
     func boot(routes: RoutesBuilder) throws {
