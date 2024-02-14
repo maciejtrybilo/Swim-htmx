@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swim",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robb/Swim.git",
+      "state" : {
+        "revision" : "a0943e6f3cb5751ee7b69ed43a33613ea67d0c6a",
+        "version" : "0.4.0"
+      }
+    }
+  ],
+  "version" : 2
+}
