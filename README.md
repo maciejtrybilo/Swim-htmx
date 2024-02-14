@@ -1,4 +1,4 @@
-This  package extends the Swim HTML DSL with syntax sugar for HTMX.
+This  package extends the [Swim](https://github.com/robb/Swim) HTML DSL with syntax sugar for [HTMX](https://htmx.org).
 
 **Note: This package is WIP. It's not complete and not everything is properly considered. Please refrain from using it in prod for the time being. BTW, PRs welcome!**
 
@@ -6,12 +6,13 @@ HTMX defines new HTML tag attributes to allow any tag to issue network calls and
 
 SwimHTMX combines the HTMX tags in several functions for ease of use in Swim.
 
-In the following example of a Vapor controller, the `htmxAction` function is applied to a button defining:
+In the following example of a [Vapor💧](https://github.com/vapor/vapor) controller, the `htmxAction` function is applied to a button defining:
 - the endpoint called then the button is clicked
 - the tag which contents will be replaced with the response
+
 as well as disabling the button for the duration of the call.
 
-The `GET /emoji` endpoint simply responds with a random emoji text (which is valid HTML) and the contents of the <div id:"emoji"> is replaced with it.
+The `GET /emoji` endpoint simply responds with a random emoji text (which is valid HTML) and the contents of the `<div id:"emoji">` tag is replaced with it.
 
 ```Swift
 struct EmojiController: RouteCollection {
@@ -49,7 +50,7 @@ struct EmojiController: RouteCollection {
 }
 ```
 
-The home page is rendered into the following HTML. You can see the HTMX attributes rendered.
+The home page is rendered into the following HTML. You can see the included HTMX attributes.
 
 ```HTML
 <html>
