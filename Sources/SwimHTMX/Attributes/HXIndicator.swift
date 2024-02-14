@@ -1,4 +1,4 @@
-enum HXIndicator: HXAttribute {
+public enum HXIndicator: HXAttribute {
     
     case id(_ id: String)
     case cssSelector(selector: String)

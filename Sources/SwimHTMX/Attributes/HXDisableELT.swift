@@ -1,4 +1,4 @@
-enum HXDisableELT: HXAttribute {
+public enum HXDisableELT: HXAttribute {
     
     case this
     case closestSelector(_ selector: String)

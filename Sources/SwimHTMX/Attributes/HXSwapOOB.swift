@@ -1,4 +1,4 @@
-enum HXSwapOOB: HXAttribute {
+public enum HXSwapOOB: HXAttribute {
     
     case swap(_ swap: HXSwap)
     case swapAndSelector(_ swap: HXSwap, selector: String)

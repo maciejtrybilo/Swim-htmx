@@ -1,8 +1,8 @@
-enum HXSwap: HXAttribute {
+public enum HXSwap: HXAttribute {
     
-    enum Modifier {
+    public enum Modifier {
         
-        enum Direction {
+        public enum Direction {
             case top, bottom
         }
         

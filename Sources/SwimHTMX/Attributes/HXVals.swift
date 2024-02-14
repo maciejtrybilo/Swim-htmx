@@ -1,7 +1,7 @@
 import Foundation
 
 // TODO: escape these to avoid XSS
-enum HXVals: HXAttribute {
+public enum HXVals: HXAttribute {
     
     case jsonString(_ string: String)
     case encodable(_ encodable: Encodable)

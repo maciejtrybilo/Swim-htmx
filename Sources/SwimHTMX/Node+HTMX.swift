@@ -2,7 +2,7 @@ import Swim
 
 extension Node {
     
-    func htmxAction(endpoint: HXMethod,
+    public func htmxAction(endpoint: HXMethod,
                     target: HXTarget,
                     swap: HXSwap = .innerHTML(modifiers: nil),
                     indicator: HXIndicator? = nil,
@@ -40,7 +40,7 @@ extension Node {
         }
     }
     
-    func htmxDisable() -> Node {
+    public func htmxDisable() -> Node {
         
         switch self {
         case .element(let name, var attributes, let children):
@@ -54,7 +54,7 @@ extension Node {
         }
     }
     
-    func htmxOutOfBand(id: String, _ oob: HXSwapOOB) -> Node {
+    public func htmxOutOfBand(id: String, _ oob: HXSwapOOB) -> Node {
         
         switch self {
         case .element(let name, var attributes, let children):
@@ -69,7 +69,7 @@ extension Node {
         }
     }
     
-    func htmxIndicator(id: String) -> Node {
+    public func htmxIndicator(id: String) -> Node {
         
         switch self {
         case .element(let name, var attributes, let children):
