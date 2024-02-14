@@ -72,3 +72,5 @@ The home page is rendered into the following HTML. You can see the HTMX attribut
 	</body>
 </html>
 ```
+And that's the result:
+![Screen Recording 2024-02-14 at 20 52 11](https://github.com/maciejtrybilo/Swim-htmx/assets/1718852/5f34604a-f083-435f-b6c4-a50f05bfd628)
