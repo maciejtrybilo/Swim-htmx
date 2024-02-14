@@ -1,6 +1,6 @@
 This  package extends the Swim HTML DSL with syntax sugar for HTMX.
 
-*Note: This package is WIP. It's not complete and not everything is properly considered. Please refrain from using it in prod for the time being. BTW, PRs welcome!*
+**Note: This package is WIP. It's not complete and not everything is properly considered. Please refrain from using it in prod for the time being. BTW, PRs welcome!**
 
 HTMX defines new HTML tag attributes to allow any tag to issue network calls and swap only a part or parts of the website with the received response. It opens the possibility to create rich web experiences driven from the backend and removes the need for browser-side frameworks such as React or Angular in most use cases.
 
