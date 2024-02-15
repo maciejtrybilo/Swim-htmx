@@ -4,7 +4,7 @@ This  package extends the [Swim](https://github.com/robb/Swim) HTML DSL with syn
 
 HTMX defines new HTML tag attributes to allow any tag to issue network calls and swap only a part or parts of the website with the received response. It opens the possibility to create rich web experiences driven from the backend and removes the need for browser-side frameworks such as React or Angular in most use cases.
 
-SwimHTMX combines the HTMX tags in several functions for ease of use in Swim.
+SwimHTMX combines the HTMX tags into several functions for ease of use in Swim.
 
 In the following example of a [Vapor💧](https://github.com/vapor/vapor) controller, the `htmxAction` function is applied to a button defining:
 - the endpoint called then the button is clicked
