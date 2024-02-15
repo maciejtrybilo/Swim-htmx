@@ -12,7 +12,7 @@ In the following example of a [Vapor💧](https://github.com/vapor/vapor) contro
 
 as well as disabling the button for the duration of the call.
 
-The `GET /emoji` endpoint simply responds with a random emoji text (which is valid HTML) and the contents of the `<div id:"emoji">` tag is replaced with it.
+The `GET /emoji` endpoint responds with a random emoji text (which is valid HTML) and the contents of the `<div id:"emoji">` tag is replaced with it each time the button is pressed.
 
 ```Swift
 import Vapor
