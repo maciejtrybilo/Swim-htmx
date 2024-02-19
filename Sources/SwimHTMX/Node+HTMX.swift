@@ -2,23 +2,25 @@ import Swim
 
 extension Node {
     
-    public func htmxAction(endpoint: HXMethod,
-                    target: HXTarget,
-                    swap: HXSwap = .innerHTML(modifiers: nil),
-                    indicator: HXIndicator? = nil,
-                    vals: HXVals? = nil,
-                    confirm: String? = nil,
-                    disable: HXDisableELT? = nil) -> Node {
+    public func htmxAction(endpoint: HXEndpoint,
+                           target: HXTarget,
+                           trigger: HXTrigger = .raw(value: "click"),
+                           swap: HXSwap = .innerHTML(modifiers: nil),
+                           indicator: HXIndicator? = nil,
+                           vals: HXVals? = nil,
+                           confirm: String? = nil,
+                           disable: HXDisableELT? = nil) -> Node {
         
         switch self {
         case .element(let name, var attributes, let children):
             
             attributes[endpoint.key] = endpoint.value
             attributes[target.key] = target.value
+            attributes[trigger.key] = trigger.value
             attributes[swap.key] = swap.value
             
             if let indicator {
-               attributes[indicator.key] = indicator.value
+                attributes[indicator.key] = indicator.value
             }
             
             if let vals {

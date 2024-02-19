@@ -1,4 +1,4 @@
-public enum HXMethod: HXAttribute {
+public enum HXEndpoint: HXAttribute {
     case get(path: String)
     case post(path: String)
     case delete(path: String)
